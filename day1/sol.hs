@@ -21,7 +21,6 @@ numPositiveDeltas nums = length posDeltas
         deltas = map (\x -> (fst x) - (snd x)) combos
         combos = zip (tail nums) nums
 
--- What are "expressions"? How do they differ from "statements"
 makeSlidingWindow :: Int -> [Int] -> [[Int]]
 makeSlidingWindow windowSize nums = 
   if ((length nums) == windowSize)
